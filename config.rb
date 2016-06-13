@@ -34,11 +34,12 @@ end
 #   end
 # end
 
-# Build-specific configuration
-configure :build do
-  # Minify CSS on build
-  # activate :minify_css
+# Global site settings (not shown here)
+set :site_url, ""
+# ...
 
-  # Minify Javascript on build
-  # activate :minify_javascript
+configure :build do
+  # Relative assets needed to deploy to Github Pages
+  activate :relative_assets
 end
+

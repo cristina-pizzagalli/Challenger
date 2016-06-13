@@ -50,7 +50,7 @@
     width: 30px;
     height: 60px;
     text-indent: -9999px;
-    background-image: url(/images/left-arrow.png);
+    background-image: url(../images/left-arrow.png);
     transition: all 0.25s ease-in-out;
 }
 .unslider-arrow:hover {
@@ -59,7 +59,7 @@
 .unslider-arrow.next {
     left: auto;
     right: 20px;
-    background-image: url(/images/right-arrow.png);
+    background-image: url(../images/right-arrow.png);
 }
 @media screen and (max-width: 840px) {
   .unslider-arrow {
@@ -67,7 +67,7 @@
     width: 15px;
     height: 30px;
     text-indent: -9999px;
-    background-image: url(/images/left-arrow.png);
+    background-image: url(../images/left-arrow.png);
     background-size: 100%;
   }
   .unslider-arrow.next {
