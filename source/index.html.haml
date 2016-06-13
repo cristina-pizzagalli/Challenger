@@ -1,0 +1,133 @@
+---
+title: Home - Challenger
+---
+.wrapper
+  %header
+    .left
+      %img{:src=>"/images/challenger-logo.png", :alt=>""}
+    .right
+      .logos
+        .logo
+          %a{:href=>"#", :target=>"blank"}
+            %img{:src=>"/images/tennis-canada.png", :alt=>""}
+        .logo
+          %a{:href=>"#", :target=>"blank"}
+            %img{:src=>"/images/atp-challenger.png", :alt=>""}
+        .logo
+          %a{:href=>"#", :target=>"blank"}
+            %img{:src=>"/images/itf-logo.png", :alt=>""}
+      .link
+        .component
+          BUY YOUR TICKETS!
+        .component
+          %form{:name => "tournament-ticket"}
+            %select#ddmenu_name{:name => "ddmenu_name", :style => "width: 80% !important;"}
+              %option{:selected => "selected", :value => ""} Choose A Tournament
+              %option{:value => "http://www.gmail.com"} Gmail
+              %option{:value => "http://www.google.co.in"} Google
+              %option{:value => "http://www.facebook.com"} Facebook
+            %input{:name => "Submit", :onclick => "window.open(ddmenu_name.value,'newtab'+ddmenu_name.value)", :type => "button", :value => "Go"}
+
+  %section.carousel
+    .news-carousel
+      %ul
+        %li{:style=>"background-image: url(/images/sliderBG.jpg);"} 
+          .headline
+            .date
+              March 18 2016
+            .title
+              Shapovalov advances to the semifinals of the Drummondville National Bank Challenger
+            %a{:href=>"http://google.com"} Read the post
+        %li{:style=>"background-image: url(/images/sliderBG.jpg);"} 
+          .headline
+            .date
+              March 18 2016
+            .title
+              Shapovalov advances to the semifinals of the Drummondville National Bank Challenger
+            %a{:href=>"http://google.com"} Read the post
+        %li{:style=>"background-image: url(/images/sliderBG.jpg);"} 
+          .headline
+            .date
+              March 18 2016
+            .title
+              Shapovalov advances to the semifinals of the Drummondville National Bank Challenger
+            %a{:href=>"http://google.com"} Read the post
+  %section.dates
+    %ul
+      %li
+        Drummondville
+        %strong
+          12-20 March
+      %li
+        Winnipeg
+        %strong
+          9-17 July
+      %li
+        Granby
+        %strong
+          30-7 August
+      %li
+        Gatineau
+        %strong
+          6-14 August
+      %li
+        Saguenay
+        %strong
+          15-23 October
+  %section.content
+    %h2
+      ABOUT THE TOURNAMENTS
+    %p
+      The partnership between Tennis Canada and National Bank extends far beyond the Rogers Cup. Since 2005, National Bank has been the title sponsor of the National Bank Challenger events organized by Tennis Canada. Formerly known as the National Bank Circuit, the Challenger events foster elite development and serve as a first experience on the professional tour for Canadian players, who can earn ATP/WTA and ITF points towards their world ranking. National Bank aims to support local players as they embark on the pro circuit by sponsoring four Challenger events in Québec and providing bursaries of up to $50 000. Through the years, the National Bank Challenger events have made a name for themselves and hosted players from around the world. In fact, many of the top names in tennis have played in National Bank Challenger events, including homegrown talents Milos Raonic, Eugenie Bouchard and Vasek Pospisil, John Isner of the US, Dominika Cibulkova of Slovakia and Angelique Kerber and Sabine Lisicki of Germany.
+    %p
+      “The National Bank Challenger events are the first level of competition on the professional tour. Players can gain valuable points and climb in the rankings to enter major tournaments. Until National Bank pledged its support, there were too few of these events held in Canada. Our players had no choice but to travel abroad for weeks on end to earn points,” explained Eugène Lapierre, vice-president of professional tennis in Québec and director of the Rogers Cup.
+    %p
+      “National Bank is proud to play a role in the growth of tennis in Canada, and particularly in Quebec and Ontario. Our financial support helps athletes at every stage of their career. The Young Aces program gives children a chance to develop their natural ability, the Challenger tournaments highlight the male and female tennis stars of tomorrow, while the Rogers Cup in Montreal and Toronto is centre stage for the sport’s top professionals. These tournaments, which bring together athletes and tennis fans from all over the world, are also an opportunity to promote On the Ball, our tennis ball recovery program that helps young students by making classrooms more conducive to learning,” stated Karen Leggett, Executive Vice-President – Marketing and Corporate Strategy at National Bank.
+  %section.sponsor
+    %img{:src=>"/images/sponsor.png", :alt=>""}
+  %section.contact
+    .left
+      %ul
+        %li
+          %img{:src=>"/images/contact-1.png", :alt=>""}
+        %li
+          %img{:src=>"/images/contact-2.png", :alt=>""}
+        %li
+          %img{:src=>"/images/contact-3.png", :alt=>""}
+    .right
+      %h2
+        CONTACT US
+      %form{:action => "#", :method => "post"}
+        .field
+          %label{:for => "name"} Name : *
+          %input#name{:name => "user_name", :type => "text"}
+        .field
+          %label{:for => "mail"} Email address : *
+          %input#mail{:name => "user_email", :type => "email"}
+        .field
+          %label{:for => "phone"} Phone number : *
+          %input#phone{:name => "user_phone", :type => "phone"}
+        .field
+          %label
+            Tournament : *
+          %select
+            %option{:disabled => "disabled", :selected => "selected"} Choose A Tournament
+            %option{:value => "Tournament 1"} Tournament #1
+            %option{:value => "Tournament 2"} Tournament #2
+            %option{:value => "Tournament 3"} Tournament #3
+        .field
+          %label
+            Subject : *
+          %select
+            %option{:disabled => "disabled", :selected => "selected"} WHAT’S ON YOUR MIND?
+            %option{:value => "Option 1"} Option #1
+            %option{:value => "Option 2"} Option #2
+            %option{:value => "Option 3"} Option #3
+        .field
+          %label{:for => "msg"} Your Message :
+          %textarea#msg{:name => "user_message"}
+        .button
+          %button{:type => "submit"} Submit
+%footer
+  .copyright
+    All rights reserved - Challenger National Bank 2016
