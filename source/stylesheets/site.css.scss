@@ -47,11 +47,26 @@ header {
     display: table-cell;
     vertical-align: bottom;
     text-align: right;
+    .language-toggle {
+      font-size: 14px;
+      color: #002326;
+      padding: 0px 0px 15px 0px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      a {
+        color: #df0024;
+        text-decoration: none;        
+        transition: all 0.25s ease-in-out;
+        &:hover {   
+          color: #002326;
+        }
+      }
+    }
     .logos {
       display: table;
       float: right;
       clear: right;
-      padding: 0px 0px 20px 0px;
+      padding: 0px 0px 15px 0px;
       .logo {
         display: table-cell;
         padding: 0px 10px;
@@ -568,7 +583,7 @@ footer {
       line-height: 0;
       text-align: center;
       img {
-        width: 140px;
+        width: 100px;
       }
     }
     .right  {
@@ -577,12 +592,27 @@ footer {
       max-width: 100%;
       line-height: 0;
       text-align: center;
+      .language-toggle {
+        font-size: 14px;
+        color: #002326;
+        padding: 30px 0px 25px 0px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        a {
+          color: #df0024;
+          text-decoration: none;        
+          transition: all 0.25s ease-in-out;
+          &:hover {   
+            color: #002326;
+          }
+        }
+      }
       .logos {
         display: block;
         margin: 0px auto;
         float: none;
         clear: right;
-        padding: 20px 0px 20px 0px;
+        padding: 0px 0px 20px 0px;
         .logo {
           display: table-cell;
           padding: 0px 10px;
@@ -596,7 +626,7 @@ footer {
         float: none;
         clear: right;
         font-size: 22px;
-        margin: 20px auto;
+        margin: 0px auto 10px auto;
         .component {
           display: block;
           padding: 5px 0px;
