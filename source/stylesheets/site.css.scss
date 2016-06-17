@@ -205,13 +205,21 @@ header {
       font-family: 'Montserrat', sans-serif;
       font-weight: 400;
       border-right: 1px solid #ddd;
-      strong {
-        font-size: 22px;
-        color: #df0024;
-        text-transform: uppercase;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        display: block;
+      a {
+        text-decoration: none;    
+        color: #002326;    
+        transition: all 0.25s ease-in-out;
+        strong {
+          font-size: 22px;
+          color: #df0024;
+          text-transform: uppercase;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 400;
+          display: block;
+        }
+        &:hover {
+          color: #df0024;
+        }
       }
       &:first-of-type {
         padding: 0px 20px 0px 0px;
